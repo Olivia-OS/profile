@@ -1,0 +1,338 @@
+body {
+    margin: 0;
+    color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(78, 87, 83);
+    background-image: url(../images/dust.gif);
+    background-attachment: fixed;
+}
+p, blockquote {
+    font-size: .9em;
+    line-height: 1.6em;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: lightgoldenrodyellow;
+}
+.container {
+    text-align: center;
+    padding: .8em 1.2em;
+}
+.logo {
+    width: 50px;
+
+}
+/* hiding mibile view*/
+.hide-mobile {
+    display: none;
+}
+/* creates a flexbox for logo */
+header {
+    padding-top: 2em;
+    display: flex;
+    justify-content: flex-start;
+}
+.menu {
+    width: 35px;
+    margin: 50%;
+    margin-top: 10%;
+}
+.stars {
+    width: 55%;
+}
+/* Name, and "hi" in lots of languages */
+h1, .hi-text {
+    position: relative;
+    z-index: 3;
+}
+.hi-text {
+    font-size: 1.1em;
+}
+.light-gray-container {
+    width: 100%;
+    background: rgb(111, 121, 113);
+    color: #fff;
+    margin-top: 15%;
+    padding: 4em 0 2em;
+    border-top-left-radius: 40px;
+    transform: skewY(-2deg);
+}
+/* mobile view before desktop view */
+.light-gray-container:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: rgb(111, 121, 113);
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -2;
+}
+/* exit mobile view and enter desktop view */
+.light-gray-container:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: rgb(219, 205, 143);
+    position: absolute;
+    top: -80px;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+/* fixing skewed containder */
+.light-gray-container ul {
+    transform: skewY(2deg);
+}
+.light-gray-container ul li {
+    margin-bottom: 3em;
+}
+.light-gray-container ul li p {
+    margin-bottom: 3em;
+    padding: 0 .5em;
+}
+.light-gray-container img {
+    width: 35%;
+}
+.gray-container {
+    padding: 4em 0 2em;
+    margin-top: -3%;
+}
+.gray-container ul li:first-child {
+    margin-bottom: 2em;
+    border-radius: 50%;
+}
+.gray-container img {
+    width: 25%;
+    border-radius: 50%;
+}
+.figure {
+    margin: 0;
+    padding: 0;
+}
+figcaption {
+    font-weight: bold;
+    color: rgb(128, 167, 111);
+}
+h2 {
+    margin-top: 7%;
+}
+.cta {
+    background-color: #769266;
+    width: 50%;
+    display: block;
+    color: rgb(241, 219, 219);
+    border-radius: 25px;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+}
+.footer-container {
+    width: 100%;
+    background: rgb(65, 73, 68);
+    color: rgb(129, 145, 118);
+    padding: 3em 0;
+    border-top-right-radius: 40px;
+    transform: skewY(2deg);
+}
+.footer-container .container{
+    transform: skewY(-2deg);
+}
+.footer-container:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #3D444A;
+    position: absolute;
+    top: -39px;
+    left: 0;
+    z-index: -2;
+}
+.footer-container:after {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: rgb(219, 205, 143);
+    position: absolute;
+    z-index: -1;
+    top: -80px;
+    left: 0;
+    border-radius: 50%;
+}
+ul.footer-links {
+    margin: 0 auto;
+}
+ul.footer-links li {
+    display: inline-block;  
+}
+ul.footer-links li a {
+    color: #9D9D9D;
+    font-size: .8em;  
+}
+nav ul {
+    position: fixed;
+    width:20%;
+    top: 0;
+    right: 0;
+    text-align: center;
+    height: 40%;
+    z-index: 2;
+    padding-top: 3em;
+    padding-right: 2em;
+}
+nav ul li a {
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: #9e9c84;
+    border-radius: 50%;
+}
+nav ul li a:hover {
+    background-color: #e5a9a9;
+}
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+.exit-btn img {
+    width: 15px;
+    cursor: pointer;
+}
+/* media query and responsive design */
+@media only screen and (min-width:650px) {
+    .stars {
+        width: 50%;
+    }
+    h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+    .hi-text {
+        font-size: 1.4em;
+        margin-bottom: 12%;
+    }
+    .light-gray-container {
+        margin: 0;
+    }
+    .light-gray-container img {
+        width: 35%;
+    }
+    .light-gray-container ul {
+        display: flex;
+        margin-top: -1em;
+        align-items: center;
+    }
+    .light-gray-container ul li {
+        margin-bottom: 0;
+    }
+    .light-gray-container ul li p {
+        padding: 0 .8em;
+    }
+    .gray-container ul {
+        display: flex;
+    }
+    nav ul {
+        width: 40%;
+    }
+    .cta {
+        width: 50%;
+    }
+}
+@media only screen and (min-width:875px) {
+    .hi-text {
+        margin-bottom: 15%;
+    }
+    .light-gray-container ul {
+        margin: 0 0 4%;
+    }
+    .gray-container {
+        margin: 4% 0 0;
+    }
+    .cta {
+        width: 50%;
+    }
+@media only screen and (min-width:1024px) {
+        .cta {
+            width: 50%;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .show-desktop {
+            display: block;
+            margin: 0 auto 13% auto;
+        }
+        .hide-desktop {
+            display: none;
+        }
+        nav ul {
+            position: inherit;
+            width: auto;
+            background: none;
+            height: auto;
+            display: flex;
+            padding-top: 0;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            color: #e5a9a9;
+            background-color: inherit;
+            text-align: right;
+            padding: 1em 2em;
+            font-weight: 600;
+        }
+        nav ul li a:hover {
+            background-color: inherit;
+        }
+        .scroll {
+            width: 200px;
+            animation: move 1s infinite alternate;
+        }
+        @keyframes move {
+            0% {
+                transform: translateY(0px);
+            }
+            100% {
+                transform: translateY(20px);
+            }
+        }
+        @media only screen and (min-width: 1600px)  {
+            .stars {
+                width: 40%;
+                margin: 5em auto 4em 15%;
+            }
+            .container {
+                width: 70%;
+            }       
+            .light-gray-container {
+                padding: 7em 0 2em;
+            }   
+            .light-gray-container ul li p, blockquote {
+                font-size: 1.3em;
+            }
+            .gray-container {
+                padding: 6em 0 4em;
+            }
+            h2 {
+                margin-top: 4em;
+            }
+            .light-gray-container img {
+                width: 15%;
+            }
+            .light-gray-container ul li:nth-child(3) img {
+                width: 8%;
+                margin-top: -4px;
+            }
+}

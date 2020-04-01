@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="../images//logo_o.svg" alt="logo letter O" class="logo">
+            <img src="../images//logo_s.svg" alt="logo letter s" class="logo">
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="../images//ham1.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="../images/exit.svg" alt="exit menu">
+                    </li>
+                    <li><a href="#">Bio</a></li>
+                    <li><a href="#">Interests</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <img src="../images/star.gif" alt="star shine animation" class="stars">
+            <h1>Olivia says hi</h1>
+            <p class="hi-text">"Hi"__"Hiya"__"Hey"__"Sup"__"G-day"__"Yo"__"你好"__"안녕하세요"__"こんにちは"__"
+                ਹਾਇ"__"Ciao"__"Hola"__"Salut".</p>
+            <img src="../images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+    <div class="light-gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="../images/blog_icon.svg" alt="icon 1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem, similique modi reiciendis suscipit veniam alias, id hic nihil officia fugiat eius magni temporibus laboriosam, illum cum quo. Animi, molestias.</p>  
+                </li>
+                <li>
+                    <img src="../images/skills_icon.svg" alt="icon 2">
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem, similique modi reiciendis suscipit veniam alias, id hic nihil officia fugiat eius magni temporibus laboriosam, illum cum quo. Animi, molestias.</p>  
+                </li>
+                <li>
+                    <img src="../images/cv_icon.svg" alt="icon 3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem, similique modi reiciendis suscipit veniam alias, id hic nihil officia fugiat eius magni temporibus laboriosam, illum cum quo. Animi, molestias.</p>  
+                </li>
+            </ul>
+        </div> 
+    </div>
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="../images/olivia.jpeg" alt="Olivia's profile photo">
+                        <blockquote>Olivia Su<br>Born in China🇨🇳<br>Grew up in Vancouver, Canada🇨🇦<br>Lives in Brisbane, Australia🇦🇺<br>Master of Criminology and Criminal Justice🎓<br>Future Full-Stack Developer💻</blockquote>
+                        <figcaption>About Olivia</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="../images/likes.svg" alt="heart icon">
+                        <blockquote>Harry Potter⚡️<br>Crime Show📺<br>Snowboarding❄️<br>Boxing🥊<br>Driving🚗<br>#Aesthetics✨</blockquote>
+                        <figcaption>Interests</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Come Say "Hi"</h2>
+        <a href="#" class=cta>"Hi" Olivia</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="../images//logo_o.svg" alt="logo letter O" class="logo">
+                    <img src="../images//logo_s.svg" alt="logo letter s" class="logo">
+                </a>
+                <p class="address">BRISBANE, QLD<br>AU</p>
+                <ul class="footer-links">
+                    <li><a href="#">👆</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit'); 
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile'); // when clicked on the menu, attach and detach the hide-mobile class
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+</html>
