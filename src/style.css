@@ -2,7 +2,7 @@ body {
     margin: 0;
     color: lightgoldenrodyellow;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(78, 87, 83);
+    background-color: #4e5753;
     background-image: url(../images/dust.gif);
     background-attachment: fixed;
 }
@@ -14,7 +14,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    color: lightgoldenrodyellow;
+    color: #fafad2;
 }
 .container {
     text-align: center;
