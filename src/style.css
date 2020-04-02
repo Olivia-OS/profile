@@ -3,7 +3,7 @@ body {
     color: lightgoldenrodyellow;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(78, 87, 83);
-    background-image: url(images/dust.gif);
+    background-image: url(../images/dust.gif);
     background-attachment: fixed;
 }
 p, blockquote {
@@ -259,6 +259,10 @@ nav ul li a:hover {
     }
     .cta {
         width: 50%;
+    }
+    header ul li {
+        display: flex;
+        justify-content: space-evenly;
     }
 @media only screen and (min-width:1024px) {
         .cta {

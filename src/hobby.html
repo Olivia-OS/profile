@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia_Hobby</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="linked.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html">
+                <img src="../images/logo_o.svg" alt="logo letter O" class="logo">
+                <img src="../images/logo_s.svg" alt="logo letter s" class="logo">
+            </a>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="../images/ham1.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="../images/exit.svg" alt="exit menu">
+                    </li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="bio.html">Bio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="hobby.html">Interests</a></li>
+                    <li><a href="cv.html">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <img src="../images/hobby.gif" alt="profile photo" class="stars">
+            <h1>~hObBy~</h1>
+            <p class="hi-text">✨</p>
+            <img src="../images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+    <div class="light-gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="../images/harry_potter_icon.svg" alt="icon 2">
+                 <p>Proud SLYTHERIN 🐍</p>
+                </li>
+                <li>
+                    <img src="../images/book_icon.svg" alt="icon 2">
+                 <p>Books<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolor debitis esse placeat cum totam nulla error sit asperiores beatae quae mollitia officiis consequuntur alias iure perferendis, culpa magni ad!</p>  
+                </li>
+                <li>
+                    <img src="../images/boxing_icon.svg" alt="icon 2">
+                 <p>Boxing<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem, similique modi reiciendis suscipit veniam alias, id hic nihil officia fugiat eius magni temporibus laboriosam, illum cum quo. Animi, molestias.</p>  
+                </li>
+                <li>
+                    <img src="../images/snow_boarding_icon.svg" alt="icon 2">
+                 <p>Snowboarding<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem, similique modi reiciendis suscipit veniam alias, id hic nihil officia fugiat eius magni temporibus laboriosam, illum cum quo. Animi, molestias.</p>  
+                </li>
+                <li>
+                    <img src="../images/cooking_icon.svg" alt="icon 2">
+                 <p>Cooking<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem, similique modi reiciendis suscipit veniam alias, id hic nihil officia fugiat eius magni temporibus laboriosam, illum cum quo. Animi, molestias.</p>  
+                </li>
+                <li>
+                    <img src="../images/audible_icon.svg" alt="icon 2">
+                 <p>Audible<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem, similique modi reiciendis suscipit veniam alias, id hic nihil officia fugiat eius magni temporibus laboriosam, illum cum quo. Animi, molestias.</p>  
+                </li>
+                <li>
+                    <img src="../images/driving_icon.svg" alt="icon 2">
+                 <p>Driving<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum rem, similique modi reiciendis suscipit veniam alias, id hic nihil officia fugiat eius magni temporibus laboriosam, illum cum quo. Animi, molestias.</p>  
+                </li>
+            </ul>
+        </div> 
+    </div>
+    
+    <div class="container">
+        <h2>Knock Knock</h2>
+        <a href="https://www.linkedin.com/in/olivia-b3464a1a3/" class=cta>"Hi" Olivia</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="../index.html">
+                    <img src="../images/logo_o.svg" alt="logo letter O" class="logo">
+                    <img src="../images/logo_s.svg" alt="logo letter s" class="logo">
+                </a>
+                <p class="address">BRISBANE, QLD<br>AU</p>
+                <ul class="footer-links">
+                    <li><a href="hobby.html">👆</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit'); 
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile'); // when clicked on the menu, attach and detach the hide-mobile class
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+</html>

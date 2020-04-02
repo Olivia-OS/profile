@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olivia_CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="linked.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../index.html">
+                <img src="../images/logo_o.svg" alt="logo letter O" class="logo">
+                <img src="../images/logo_s.svg" alt="logo letter s" class="logo">
+            </a>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="../images/ham1.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="../images/exit.svg" alt="exit menu">
+                    </li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="bio.html">Bio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="hobby.html">Interests</a></li>
+                    <li><a href="cv.html">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <img src="../images/shine.gif" class="stars">
+            <a href="../images/cv.pdf" download="CV">
+                <img src="../images/cv.png" alt="resume" class="stars">
+            </a>
+            <h3>Click 👆to downdoad Resume</h3>
+            <p class="hi-text">✨</p>
+            <img src="../images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+    <div class="light-gray-container">
+        <div class="container">
+            <ul>
+            </ul>
+        </div> 
+    </div>
+    
+    <div class="container">
+        <h2>Knock Knock</h2>
+        <a href="https://www.linkedin.com/in/olivia-b3464a1a3/" class=cta>"Hi" Olivia</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="../index.html">
+                    <img src="../images/logo_o.svg" alt="logo letter O" class="logo">
+                    <img src="../images/logo_s.svg" alt="logo letter s" class="logo">
+                </a>
+                <p class="address">BRISBANE, QLD<br>AU</p>
+                <ul class="footer-links">
+                    <li><a href="cv.html">👆</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit'); 
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile'); // when clicked on the menu, attach and detach the hide-mobile class
+            e.preventDefault();
+        });
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+</html>
