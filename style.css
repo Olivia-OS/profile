@@ -3,7 +3,7 @@ body {
     color: lightgoldenrodyellow;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(78, 87, 83);
-    background-image: url(../images/dust.gif);
+    background-image: url(images/dust.gif);
     background-attachment: fixed;
 }
 p, blockquote {
